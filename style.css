@@ -1,0 +1,334 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'poppinsmedium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/poppins-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'comfortaaregular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/comfortaa_regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'comfortaathin';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/comfortaa_thin-webfont.woff') format('woff');
+}
+
+.ver-hor-center {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.container {
+	margin: 0 auto;
+	width: 390px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: url(images/bg-city.jpg) no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+}
+
+body, textarea, select, input {
+	font-family: 'comfortaathin', sans-serif;
+}
+
+.out-shadow {
+	box-shadow: 0 3px 20px rgba(0, 0, 0, .25);
+}
+
+.form-wrap {
+	background: -moz-linear-gradient(top, rgba(117,120,254,1) 0%, rgba(177,36,239,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(117,120,254,1) 0%,rgba(177,36,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(117,120,254,1) 0%,rgba(177,36,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7578fe', endColorstr='#b124ef',GradientType=0 ); /* IE6-9 */
+
+	border-radius: 10px;
+	height: 680px;
+	margin: 0 auto;
+	position: relative;
+	user-select: none;
+	width: 500px;
+}
+
+/******** LOG IN ********/
+
+.login {
+	box-sizing: border-box;
+	height: 230px;
+	margin-bottom: 40px;
+	padding-top: 50px;
+}
+
+.login-title {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.login-logo-cover {
+	background-color: #fff;
+	border-radius: 50%;
+	height: 120px;
+	margin: 0 auto 30px auto;
+	text-align: center;
+	transition: box-shadow .3s ease;
+	width: 120px;
+}
+
+.login-logo-cover:hover .login-logo {
+	background-position: 1px 1px;
+}
+
+.login-logo-cover:hover {
+	box-shadow: 0 3px 20px rgba(0, 0, 0, .25), 
+				inset 0 3px 20px rgba(0, 0, 0, .25);	
+}
+
+.login-logo {
+	background: url(images/logo-flag.png) no-repeat;
+	background-size: cover;
+	display: inline-block;
+	height: 70px;
+	margin-top: 25px;
+	transition: background-position .3s ease;
+	width: 70px;
+}
+
+/******* FORM *******/
+.wrap-input {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.input-style {
+    background: transparent;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+	box-sizing: border-box;
+	color: #fff;
+    display: block;
+    font-size: 16px;
+    height: 45px;
+	outline: none;
+    padding: 0 5px 0 38px;
+	transition: all .5s linear;
+    width: 100%;
+}
+
+.input-style:focus {
+	border-bottom: 2px solid #fff;
+}
+
+.input-style:hover {
+	cursor: text;
+}
+
+.input-style::placeholder {
+	color: #fff;
+}
+
+.input-style:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.wrap-input label {
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	left: 10px;
+	position: absolute;
+	top: 10px;
+}
+
+.wrap-check, .recovery {
+	margin-bottom: 30px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.wrap-check label {
+	display: block;
+}
+
+.wrap-check label, .recovery {
+	color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+	padding: 8px;
+	transition: color 0.5s ease;
+}
+
+.wrap-check label:hover, .recovery:hover {
+	color: #fff;	
+}
+
+
+/* checkbox */
+
+.check-box {
+	display: none;
+	margin: 10px 0 0 20px;
+	text-align: center;
+}
+
+.check-box + label {
+	position: relative;
+	padding: 35px 0 0 0;
+	cursor: pointer;
+	display: block;
+}
+
+.check-box + label:before,
+.check-box + label:after {
+	content: '';
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	transition: all .4s ease;
+}
+
+.check-box + label:before {
+	background-color: rgba(255, 255, 255, 0.25);
+	border-radius: 13px;
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+	height: 26px;
+	left: 0;
+	top: 0;
+	width: 48px;
+}
+
+.check-box + label:after {
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0,0,0,.3);
+	height: 22px;
+	left: -22px;
+	top: 2px;
+	width: 22px;
+}
+
+.check-box:checked + label:before {
+	background: transparent;
+}
+
+.check-box:checked + label:after {
+	left: 24px;
+}
+
+
+/*** Button ****/
+
+
+.btn-style {
+	background-color: #fff;
+    border: none;
+	border-radius: 25px;
+    color: #373737;
+	cursor: pointer;
+	display: block;
+	font-family: 'poppinsmedium', sans-serif;
+    font-size: 19px;
+	height: 50px;
+	margin: 0 auto;
+	outline: none;
+	text-align: center;
+	transition: all 0.5s linear; 
+	width: 120px;
+}
+
+.btn-style:not(.loading):hover {
+	background: -moz-linear-gradient(top, rgba(177,36,239,1) 0%, rgba(117,120,254,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(177,36,239,1) 0%,rgba(117,120,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(177,36,239,1) 0%,rgba(117,120,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b124ef', endColorstr='#7578fe',GradientType=0 ); /* IE6-9 */
+	
+	color: #fff;
+}
+
+	/* loading state */
+
+.loading {
+	background: #b472f7 url(images/load.gif) center no-repeat;
+    cursor: not-allowed;
+    text-indent: -9999px;
+    transition: none !important;
+}
+
+/*** Forgot ***/
+
+.log-reg {
+	bottom: 15px;
+	display: table;
+	left: 0;
+	position: absolute;
+	right: 0;
+	table-layout: fixed;
+}
+
+.log-reg p:first-child a {
+	border-right: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.left-link, .right-link {
+	display: table-cell;
+}
+
+.left-link {
+	text-align: right;
+}
+
+.right-link {
+	text-align: left;
+}
+
+.left-link a, .right-link a {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 13px;
+	padding: 0 10px;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: 0.5s ease;
+}
+
+.left-link a:hover, .right-link a:hover {
+	color: #fff;
+}
+
+/**** error-block ****/
+/* add "error-block" class if has error */
+.error-text {
+    color: red;
+    display: none;
+    font-size: 12px;
+    left: 38px;
+	position: absolute;
+	top: 47px;
+}
+
+.error-block .error-text {
+    display: block;
+}
+
+.error-block input {
+    border-color: rgba(255, 0, 0, 0.5);
+}
