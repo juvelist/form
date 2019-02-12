@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+    	<link rel="shortcut icon" href="images/logo-flag.ico" />
+		<link rel="icon" href="images/logo-flag.png" />
+		<title>form</title>
+	</head>
+	<body>
+		<div class="form-wrap out-shadow">
+
+			<div class="login container">
+				<div class="login-logo-cover out-shadow">
+					<a class="login-logo" href="index.html"></a>
+				</div>
+				<p class="login-title">log in</p>
+			</div>
+
+			<form class="form-mode container" action="#" method="POST" id="login-form" autocomplete="off">
+				
+				<div class="wrap-input"> <!-- if has error add "error-block" class -->
+					<input class="input-style" type="text" placeholder="Username" id="myLogin" maxlength="30" required />
+					<label for="myLogin">&#9820;</label>
+					<p class="error-text">invalid username</p>
+				</div>
+				
+				<div class="wrap-input"> <!-- if has error add "error-block" class -->
+					<input class="input-style" type="password" placeholder="Password" id="myPass" maxlength="30" required />
+					<label for="myPass">&#9998;</label>
+					<p class="error-text">invalid password</p>
+				</div>
+
+				<div class="wrap-check">
+					<input type="checkbox" class="check-box" id="rem-me" />
+					<label class="hover-color" for="rem-me">Remember me</label>
+				</div>
+
+				<button class="btn-style" type="submit" form="login-form"> <!-- if page loading, add " loading" class -->
+					Login
+				</button>
+				
+			</form>
+
+			<div class="log-reg container">
+				<p class="left-link">
+					<a class="hover-color" href="forgot.html">forgot password?</a>
+				</p>
+				<p class="right-link">
+					<a class="hover-color" href="register.html">registration</a>
+				</p>
+			</div>
+
+		</div>
+	</body>
+</html>
