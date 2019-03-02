@@ -52,6 +52,11 @@ body, textarea, select, input {
 	font-family: 'comfortaathin', sans-serif;
 }
 
+.wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .out-shadow {
 	box-shadow: 0 3px 20px rgba(0, 0, 0, .25);
 }
@@ -63,7 +68,8 @@ body, textarea, select, input {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7578fe', endColorstr='#b124ef',GradientType=0 ); /* IE6-9 */
 
 	border-radius: 10px;
-	height: 680px;
+	box-sizing: border-box;
+	min-height: 680px;
 	margin: 0 auto;
 	position: relative;
 	user-select: none;

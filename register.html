@@ -2,62 +2,68 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 		<link rel="stylesheet" href="style.css" />
-    	<link rel="shortcut icon" href="images/logo-flag.ico" />
+		<link rel="stylesheet" href="responsive.css" />
+		<link rel="shortcut icon" href="images/logo-flag.ico" />
 		<link rel="shortcut icon" type="image/png" href="images/logo-flag.png" />
+
 		<title>register</title>
 	</head>
-	<body>				
-		<div class="form-wrap out-shadow">
+	<body>
+		<div class="wrapper">
+			<div class="form-wrap out-shadow">
 
-			<div class="login container">
-				<div class="login-logo-cover out-shadow">
-					<a class="login-logo" href="index.html"></a>
+				<div class="login container">
+					<div class="login-logo-cover out-shadow">
+						<a class="login-logo" href="index.html"></a>
+					</div>
+					<p class="login-title">register</p>
 				</div>
-				<p class="login-title">register</p>
+
+				<form class="form-mode container" action="#" method="POST" id="login-form" autocomplete="off">
+
+					<div class="wrap-input"> <!-- if has error add "error-block" class -->
+						<input class="input-style" type="text" placeholder="Username" id="myLogin" maxlength="30" required />
+						<label for="myLogin">&#9820;</label>
+						<p class="error-text">invalid username</p>
+					</div>
+
+					<div class="wrap-input"> <!-- if has error add "error-block" class -->
+						<input class="input-style" type="password" placeholder="Password" id="myPass" maxlength="30" required />
+						<label for="myPass">&#9998;</label>
+						<p class="error-text">invalid password</p>
+					</div>
+
+					<div class="wrap-input"> <!-- if has error add "error-block" class -->
+						<input class="input-style" type="text" placeholder="Email" id="myEmail" maxlength="30" required />
+						<label for="myEmail">&#64;</label>
+						<p class="error-text">invalid email address</p>
+					</div>
+
+					<div class="wrap-input"> <!-- if has error add "error-block" class -->
+						<input class="input-style" type="text" placeholder="Tel" id="myTel" maxlength="30" required />
+						<label for="myTel">&#9742;</label>
+						<p class="error-text">invalid telephone number</p>
+					</div>
+
+					<button class="btn-style" type="submit" form="login-form"> <!-- if page loading, add " loading" class -->
+						Sign In
+					</button>
+
+				</form>
+
+				<div class="log-reg container">
+					<p class="left-link">
+						<a href="forgot.html">forgot password?</a>
+					</p>
+					<p class="right-link">
+						<a href="index.html">profile login</a>
+					</p>
+				</div>
+
 			</div>
-
-			<form class="form-mode container" action="#" method="POST" id="login-form" autocomplete="off">
-				
-				<div class="wrap-input"> <!-- if has error add "error-block" class -->
-					<input class="input-style" type="text" placeholder="Username" id="myLogin" maxlength="30" required />
-					<label for="myLogin">&#9820;</label>
-					<p class="error-text">invalid username</p>
-				</div>
-				
-				<div class="wrap-input"> <!-- if has error add "error-block" class -->
-					<input class="input-style" type="password" placeholder="Password" id="myPass" maxlength="30" required />
-					<label for="myPass">&#9998;</label>
-					<p class="error-text">invalid password</p>
-				</div>
-
-				<div class="wrap-input"> <!-- if has error add "error-block" class -->
-					<input class="input-style" type="text" placeholder="Email" id="myEmail" maxlength="30" required />
-					<label for="myEmail">&#64;</label>
-					<p class="error-text">invalid email address</p>
-				</div>
-
-				<div class="wrap-input"> <!-- if has error add "error-block" class -->
-					<input class="input-style" type="text" placeholder="Tel" id="myTel" maxlength="30" required />
-					<label for="myTel">&#9742;</label>
-					<p class="error-text">invalid telephone number</p>
-				</div>
-
-				<button class="btn-style" type="submit" form="login-form"> <!-- if page loading, add " loading" class -->
-					Sign In
-				</button>
-				
-			</form>					
-
-			<div class="log-reg container">
-				<p class="left-link">
-					<a href="forgot.html">forgot password?</a>
-				</p>
-				<p class="right-link">
-					<a href="index.html">profile login</a>
-				</p>
-			</div>
-
 		</div>
 	</body>
 </html>
